@@ -1,0 +1,17 @@
+<p>
+  assignment-ngfor works!
+</p>
+<p *ngIf="displayParagraph" >Displaying Paragraph</p>
+<p *ngIf="!displayParagraph" >Paragraph disappeared</p>
+<button class="btn btn-primary" 
+(click)=" displayParagraph=!displayParagraph; onBtnClick()" >Display Details</button>
+
+
+<p *ngFor="let record of toggleParaRecords;let i = index"
+
+    [ngStyle]="{backgroundColor: (i>=4 && i<=6) ?'blue':'transparent'}"
+    [ngClass]="{fontWhite:i>=4 && i<=6}">
+    
+  {{record}}
+
+</p>
