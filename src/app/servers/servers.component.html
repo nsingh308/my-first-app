@@ -16,7 +16,7 @@
 <!-- <p innerHTML={{addNewServer}}></p>--string interpolation-->
 <!-- <p [innerHTML]="addNewServer"></p> -- property binding  -->
 
-<app-server></app-server>
-<app-server></app-server>
+<app-server *ngFor="let server of servers"></app-server>
+
 
 

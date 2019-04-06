@@ -11,6 +11,7 @@ export class ServerComponent{
     
     serverId:Number=23;
     serverStatus:String='online';
+    
 
     constructor(){
         this.serverStatus= Math.random()>0.5 ?'online':'offline';
